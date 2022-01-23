@@ -1,4 +1,7 @@
 steps:
+  # Install Maven
+  - name: 'gcr.io/cloud-builders/mvn'
+    args: ['install']
   # Docker Build
   - name: 'gcr.io/cloud-builders/docker'
     args: ['build', '-t', 

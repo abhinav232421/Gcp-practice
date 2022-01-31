@@ -18,7 +18,7 @@ steps:
     entrypoint: 'gcloud'
     timeout: 240s
     args: ['compute', 'instances', 
-           'create-with-container', 'my-vm-name',
+           'create-with-container', 'my-vm',
            '--container-image', 
            'gcr.io/${PROJECT_ID}/myimage1']
     env:
